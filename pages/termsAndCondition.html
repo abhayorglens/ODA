@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODA</title>
+
+    
+    <!-- Google Fonts Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google Font: Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google Font: Work Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- font inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+   <!-- favicon -->
+   <link rel="icon" type="image/png" href="../Resources/favicon.jpg" sizes="14x18">
+   <link rel="shortcut icon" href="../Resources/favicon.jpg">
+
+   <link rel="stylesheet" href="../css/style.css"/>
+   <link rel="stylesheet" href="../css/header.css"/>
+   <link rel="stylesheet" href="../css/footerSection.css"/>
+   <style>
+    .termsAndConditionContent{
+      min-height:100vh;
+    }
+    .container {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 20px;
+   
+   
+   
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.list li:before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #333;
+    display: inline-block;
+    margin-right: 10px;
+}
+   </style>
+ 
+</head>
+<body>
+<div class="termsAndConditionContainer">
+        <!-- 1) header or nav bar -->
+   <div id="header"></div>
+
+   <div class="termsAndConditionContent">
+
+    <div class="container">
+      <h1>Terms and Conditions</h1>
+      <ul class="list">
+          <li><span>Regular Admission Fee is INR 1.10 Lakh + 18% GST</span></li>
+          <li><span>Early Bird Offer Fee is INR 1 Lakh + 18% GST – Valid till 15th June, 2024.</span></li>
+          <li><span>Non - refundable payment by cheque/DD of Rs. 1.10 Lakh + 18% Taxes favoring "OD Alternative Consultancy Pvt. Ltd." at the time of registration.</span></li>
+          <li><span>For NEFT</span></li>
+          <li><span>Name : OD Alternative Consultancy Pvt. Ltd.</span></li>
+          <li><span>Bank : Axis Bank Limited</span></li>
+          <li><span>Location : Connaught Place, New Delhi</span></li>
+          <li><span>Account no : 918020070170041</span></li>
+          <li><span>Type : Current</span></li>
+          <li><span>IFSC Code : UTIB0002193</span></li>
+          <li><span>SWIFT CODE : AXISINBBA96</span></li>
+          <li><span>Your registration is considered final after we receive the registration form and advance payment.</span></li>
+          <li><span>We reserve the right to withhold the welcome note and participant material in the event that the full payment is not made before the above stated period.</span></li>
+          <li><span>In case of cancellation there is no refund. The amount can be adjusted accordingly towards the next program.</span></li>
+          <li><span>We reserve the right to cancel / change the schedule, at which time we will offer a full refund to the participant.</span></li>
+          <li><span>For any billing or payment related query, please email to murali@odalternatives.com</span></li>
+      </ul>
+  </div>
+   </div>
+
+<!-- 12) footer -->
+<div id="footer"></div>
+
+</div>
+
+   
+   <script>
+       // 0) add common header and footer
+// Function to load external HTML files
+function loadComponent(file, elementId) {
+ fetch(file)
+   .then(response => response.text())
+   .then(data => {
+     document.getElementById(elementId).innerHTML = data;
+   })
+   .catch(error => console.error('Error loading component:', error));
+}
+
+// Load header and footer
+document.addEventListener('DOMContentLoaded', function() {
+ loadComponent('header.html', 'header');
+ loadComponent('footer.html', 'footer');
+});
+   </script>
+
+    <!-- script file -->
+    <script src="../javascript/script.js"></script>
+    <script src="../javascript/header.js"></script>
+    
+   
+    
+</body>
+</html>

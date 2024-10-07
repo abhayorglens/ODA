@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>OD Publication</title>
+
+     <!-- favicon -->
+     <link rel="icon" type="image/png" href="favicon.jpg" sizes="14x18">
+     <link rel="shortcut icon" href="favicon.jpg">
+ 
+     <link rel="stylesheet" href="../css/style.css"/>
+     <link rel="stylesheet" href="../css/navBarSection.css"/>
+     <link rel="stylesheet" href="../css/footerSection.css"/>
+
+    <style>
+     .container{
+        max-width:1440px;
+        
+     }
+        .contentBox {
+            margin:80px 0 40px;
+            background-color: #fff;
+           
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            width: 100%;
+            min-height: 100vh;
+            padding:0 62px;
+        }
+        .contentBox img {
+            max-width: 235px;
+            max-height: 300px;
+            align-self: end;
+            margin-bottom:-30px;
+        }
+        .contentBox .content {
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+            
+           
+        }
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            color: #101010;
+            font-size: 34px;
+            font-weight: 600;
+            line-height: 60px;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #212121;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30px;
+        }
+        h3 {
+            margin-top: -10px;
+            font-family: 'Montserrat', sans-serif;
+            color: #5f5f5f;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 30px;
+        }
+        .contentBox input {
+            width: 100%;
+            padding: 15px 18px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+        .contentBox .buttons {
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 14px;
+            margin-top:-20px;
+            
+            
+        }
+        .contentBox button {
+            height: 50px;
+            padding: 14px 30px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .contentBox .backButton {
+            color: #457EFF;
+            background: white;
+            border: 1px solid rgb(176, 176, 176);
+        }
+        .contentBox .backButton:hover {
+            border: 1px solid rgb(40, 40, 40);
+        }
+        .contentBox .download {
+            color: white;
+            background: #457EFF;
+            padding: 14px 40px;
+        }
+        .contentBox .download:active {
+            color: white;
+            background: #2353c4;
+            padding: 14px 40px;
+        }
+        .contentBox .download:disabled {
+            background: grey;
+            cursor: not-allowed;
+        }
+        .contentBox .download:hover:not(:disabled) {
+            background: #2663f3;
+        }
+
+      
+
+    </style>
+</head>
+<body>
+
+    
+
+    <div class="container">
+
+         <!-- 1) header or nav bar -->
+     <div id="header"></div>
+  
+       <div class="contentBox">
+        <img src="../Resources/illustrator/1.jpg" alt="illustrator"/>
+        <div class="content">
+            <h1>OD Publication</h1>
+            <h2>Enabling leaders build purposeful and successful organizations</h2>
+            <h3>Download and Subscribe to our OD Publication</h3>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Your business email id" required/>
+                <input type="text" id="fullName" placeholder="Your full name" required/>
+                <input type="text" id="organization" placeholder="Your organization" required/>
+                <input type="text" id="designation" placeholder="Your designation" required/>
+            </div>
+            <div class="buttons">
+                <button  class="backButton" onclick="goBack()">GO BACK</button>
+                <button  class="download" id="downloadBtn" onclick="downloadPDF()" disabled>DOWNLOAD AND SUBSCRIBE</button>
+            </div>
+        </div>
+
+          
+       </div>
+
+         <!-- 12) footer -->
+    <div id="footer"></div>
+    </div>
+
+  
+
+    <script>
+
+// 0) add common header and footer
+// Function to load external HTML files
+function loadComponent(file, elementId) {
+  fetch(file)
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById(elementId).innerHTML = data;
+    })
+    .catch(error => console.error('Error loading component:', error));
+}
+
+// Load header and footer
+document.addEventListener('DOMContentLoaded', function() {
+  loadComponent('header.html', 'header');
+  loadComponent('footer.html', 'footer');
+});
+
+
+        const emailInput = document.getElementById('email');
+        const fullNameInput = document.getElementById('fullName');
+        const organizationInput = document.getElementById('organization');
+        const designationInput = document.getElementById('designation');
+        const downloadBtn = document.getElementById('downloadBtn');
+
+        // Function to check if all inputs are filled
+        function checkInputs() {
+            if (emailInput.value && fullNameInput.value && organizationInput.value && designationInput.value) {
+                downloadBtn.disabled = false;
+            } else {
+                downloadBtn.disabled = true;
+            }
+        }
+
+        // Attach event listeners to inputs
+        emailInput.addEventListener('input', checkInputs);
+        fullNameInput.addEventListener('input', checkInputs);
+        organizationInput.addEventListener('input', checkInputs);
+        designationInput.addEventListener('input', checkInputs);
+
+        // Function to download PDF
+        function downloadPDF() {
+            const link = document.createElement('a');
+            link.href = '../privateFiles/OD-Publication.pdf'; // Replace with the actual path to your PDF
+            link.download = '../privateFiles/OD-Publication.pdf';
+            link.click();
+        }
+
+        // Function to go back to the previous page
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+<script src="javascript/navBarSection.js"></script>
+</body>
+</html>

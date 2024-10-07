@@ -1,0 +1,166 @@
+
+    /* 8) trusted by client section ///////////////////////////*/
+    .trustedBy{
+        padding:40px 0px;
+        background-image:url('../Resources/backgroundTexture.png');
+        background-size:cover;
+        background-repeat:no-repeat;
+    }
+    
+    .trustedBy h1{
+        font-family: 'Montserrat', sans-serif;color:rgba(43, 43, 43, 1); 
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 60px;padding:0 72px;
+    }
+    
+    .trustedBy p{
+        padding:0 72px;
+        font-family:'Inter', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color:rgba(43, 43, 43, 1);        
+        margin-top:10px;
+    }
+    
+    .trustedBy .logo-scroller-container {
+        display: flex;margin-top:20px;
+        align-items: center;
+        width: 100%; /* Full screen width */
+        position: relative;
+        overflow: hidden;padding:0 72px;
+      }
+      
+     .trustedBy  .logo-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        overflow-x: scroll;
+        scrollbar-width: none; /* For Firefox */
+        
+      }
+      
+      
+      .logo-wrapper::-webkit-scrollbar {
+        display: none; /* For Chrome, Safari, and Opera */
+      }
+      
+      .logo-row {
+        display: flex;gap:40px;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+      
+     .trustedBy  .logo-row img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+      }
+      
+     .trustedBy  .logo-row img:hover {
+        transform: scale(1.1); /* Zoom effect */
+        z-index: 10; /* Bring the hovered logo to the front */
+      }
+      
+     .trustedBy  .scroll-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 999; /* Make sure buttons stay on top */
+      }
+     .trustedBy  .scroll-btn img{opacity:0.2;width:24px;height:24px;}
+      
+     .trustedBy  #scroll-left {
+        left: 32px;
+      }
+      
+     .trustedBy  #scroll-right {
+        right: 32px;
+      }
+      
+     .trustedBy  .scroll-btn:hover img {
+       opacity:0.8;
+    }
+      
+      /* Pause animation on hover */
+     .trustedBy  .logo-wrapper:hover {
+        animation-play-state: paused;
+      }
+       
+      .gallery {max-width:100%;
+        display: flex;padding:0 72px;
+        flex-wrap: wrap;gap:60px;
+        justify-content: center;
+        transition:0.7s;
+        margin-top: 30px; /* Add some space above the gallery */
+    }
+    
+    .gallery img {
+      width: 100px;transition: transform 0.3s ease;
+      height: 100px;
+      object-fit: contain;
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    }
+    .gallery img:hover {
+      transform: scale(1.1); /* Zoom effect */
+      z-index: 10; /* Bring the hovered logo to the front */
+    }
+   
+      
+    
+    #toggle-button{ font-family: 'Inter', sans-serif;     
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 68px;
+      background:white;
+      max-height:30px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      margin:30px auto 20px;
+      padding:17px 70px;
+      border:2px solid rgba(107, 101, 101, 1);
+      border-radius:4px;
+      color:#000000;cursor:pointer;  transition:0.3s;
+
+      position: relative;
+        
+      outline: none;
+      overflow: hidden;
+      
+    }
+
+    #toggle-button::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300%;
+      height: 300%;
+      background-color: rgba(0, 0, 0, 0.034);
+      border-radius: 50%;
+      transform: scale(0);
+      transition: transform 0.4s ease-out, opacity 1s ease-out;
+      pointer-events: none;
+    }
+    #toggle-button:hover::before {
+      transform: scale(2);
+      opacity: 1;
+    }
+
+
+     #toggle-button:hover{  
+      border:2px solid rgb(255, 255, 255);
+      box-shadow:-1px 1px 2px 1px rgba(190, 190, 190, 0.404);
+      padding:20px 100px;
+    }

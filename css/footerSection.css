@@ -1,0 +1,220 @@
+
+    /* 12) footer ///////////////////////////////////*/
+    footer{
+        padding:60px 62px 0;;
+        background-image:url('../Resources/backgroundTexture.png');
+        background-size:cover;
+        background-repeat:no-repeat;
+    }
+       footer .footerLogoBox {
+        margin-bottom:27px;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+    }
+     footer .footerLogoBox .companyLogo {
+        max-width: 100px;
+        max-height:74px;;cursor: pointer;
+    }
+    
+     footer .social-icons {
+        display: flex;
+        align-items: center;gap:25px;
+    }
+    
+    footer  .social-icons a {
+        display: inline-block;cursor: pointer;
+    }
+
+     footer .social-icons a img {width: 27px;}
+
+     footer  .social-icons a .youTube{width:40px;}
+
+     footer  .footerContent {display: flex;justify-content: space-between;}
+
+     footer  .links {width: 200px}
+
+     footer  .links h3 {
+        position:relative;
+        margin-bottom: 20px;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 15.4px;
+        letter-spacing: 0.04em;
+        text-align: left;
+        color:rgba(18, 28, 38, 1);
+        margin-left:14px;
+    }
+    
+    footer  .links h3::before{
+        content:"";
+        position:absolute;
+        width:6px;
+        left:-14px;
+        height:6px;
+        top:5px;
+        border:1px solid rgba(44, 113, 246, 1);
+        border-radius:50%;
+    }
+    
+     footer .links a {
+        text-decoration:none;
+        display: block;
+        margin-bottom: 2px;margin-left:-8px;
+        font-family: 'Inter', sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 19.6px;   
+        color:rgba(43, 43, 43, 1);;
+        cursor: pointer;
+        padding:6px 20px;
+    }
+    footer  .links a:hover {
+        background:rgb(243, 243, 243);
+        border-radius:20px;
+        color:black;
+    }
+
+    footer  .links .active{
+        background:rgb(243, 243, 243);
+        border-radius:20px;
+        color:black;
+    }
+
+    footer  .info {
+        margin-left:130px;
+        width: 200px;
+    }
+    
+    footer  .info h3 {
+        position:relative;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 15.4px;
+        letter-spacing: 0.04em;
+        color:rgba(38, 46, 54, 1);
+        margin-bottom: 12px;
+        margin-left:14px;
+    }
+    
+    footer  .info h3::before{
+        content:"";
+        position:absolute;
+        width:6px;
+        left:-14px;
+        height:6px;
+        top:4px;
+        border:1px solid rgba(44, 113, 246, 1);
+        border-radius:50%;
+    }
+    
+    footer  .info p {
+        font-family: 'Inter', sans-serif;
+        color:rgba(43, 43, 43, 1);
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 19.6px;
+        margin-bottom: 35px;
+    }
+    
+    footer  .subscription {text-align:right;min-width: 300px;}
+    
+    footer  .subscription p{
+        max-width:280px;;margin-left:auto;
+        font-family: 'Work Sans', sans-serif;;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: right;
+        color:rgba(43, 43, 43, 1);;
+    }
+    footer  .subscription h3 {
+        position:relative;
+        margin:15px 0 18px 0;
+        color:rgba(38, 46, 54, 1);
+        font-family: 'Work Sans', sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 15.4px;
+        letter-spacing: 0.04em;
+    }
+    
+    footer  .subscription h3::before{
+        content:"";
+        position:absolute;
+        width:6px;
+        left:-14px;
+        height:6px;
+        top:5px;
+        border:1px solid rgba(44, 113, 246, 1);
+        border-radius:50%;
+    }
+    
+    footer  .subscription input[type="email"] {
+        width:200px;
+        height:35px;
+        padding: 0px 16px;
+        background:rgba(249, 249, 249, 1);;
+        border: 2px solid rgba(107, 101, 101, 1);
+        border-right:0;
+        border-radius: 5px 0 0 5px;
+        margin-bottom: 0px;
+        font-family: 'Work Sans', sans-serif;;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.6px;
+        color:rgba(172, 172, 172, 1);;
+        margin-right:-5px;
+        }
+    
+    footer  .subscription button {
+        width:178px;
+        height:35.5px;
+        background:rgba(51, 50, 50, 1);
+        color:rgba(255, 255, 255, 1);
+        font-family: 'Work Sans', sans-serif;;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 19.6px;
+        padding: 0 20px;border:none;
+        border-radius: 0 5px 5px 0;border:none;
+        cursor: pointer;
+    }
+    
+    footer  .bottomFooter{
+        display:flex;
+        justify-content:space-between;
+        padding:47px 0;;margin-right:-20px;
+    }
+    
+    footer  .bottomFooter p{
+        font-family: 'Inter', sans-serif;;color:#4B4D50;;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.8px;
+    }
+    
+    footer  .bottomFooter a{
+        font-family: 'Inter', sans-serif;
+        font-size: 12px;
+        color:#4B4D50;
+        text-decoration:none;
+        font-weight: 400;
+        line-height: 16.8px;
+        padding:6px 20px;
+    }
+    footer  .bottomFooter a:hover{
+        background:rgb(243, 243, 243);
+        border-radius:20px;
+        color:black;
+    }
+
+    footer  .bottomFooter .active{
+        background:rgb(0, 0, 0);
+        border-radius:20px;
+        color:rgb(255, 255, 255);
+    }
+    
+    footer  .bottomFooterLink{display:flex;}

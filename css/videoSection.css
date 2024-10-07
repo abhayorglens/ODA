@@ -1,0 +1,49 @@
+
+
+    /* 10) video section ///////////////////////////*/
+    .videoSection{
+        padding:78px 90px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:40px;
+        background-image:url('../Resources/backgroundTexture.png');
+        background-size:cover;
+        background-repeat:no-repeat;
+    }
+    
+    .videoSection .videoThumbnail{
+        display:flex;
+        position:relative;
+        justify-content:center;
+        align-items:center;
+        cursor:pointer;
+    }
+    
+    /* .videoSection .videoThumbnail img{max-width:740px;} */
+    .videoSection .videoThumbnail .playButton{
+        cursor:pointer;
+        max-width:60px;
+        position:absolute;
+        opacity:0.9;
+    }
+    .videoSection .videoThumbnail .playButton:hover{
+        opacity:1;
+    }
+    .videoSection .videoThumbnail #myVideo{display:none;
+        border-radius:8px;
+        width:740px;
+        max-height: 0; 
+    }
+    .videoSection .video{
+        border-radius:8px;
+        max-width:740px;
+        max-height:473px;
+
+    }
+    
+    .videoSection .butterfly{
+        max-width:130px;
+        max-height: 300px; 
+    }
+    

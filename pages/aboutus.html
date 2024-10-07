@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODA</title>
+
+ <!-- favicon -->
+ <link rel="icon" type="image/png" href="../Resources/favicon.jpg" sizes="14x18">
+ <link rel="shortcut icon" href="../Resources/favicon.jpg">
+    
+<!-- Google Fonts Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- Google Font: Montserrat -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+ 
+<!-- Google Font: Work Sans -->
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+ 
+<!-- font inter -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/style.css"/>
+<link rel="stylesheet" href="../css/header.css"/>
+<link rel="stylesheet" href="../css/footerSection.css"/>
+<link rel="stylesheet" href="../css/testimonialSection.css"/>
+
+ 
+<style>
+    *{
+padding:0;
+margin:0;
+box-sizing: border-box;
+}
+
+body{position:relative;}
+html{scroll-behavior:smooth;}
+
+.aboutContainer{
+    max-width:1440px;
+    margin:0 auto;
+    min-height:100vh;
+    overflow:hidden;
+    position:relative;
+        }
+
+        .aboutContentBox{
+            padding:0px 62px;
+            margin:120px 0 20px;
+        }
+        .aboutContainer .aboutHeader{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+        .aboutContainer .aboutHeader img{
+            cursor:pointer;
+            position:sticky;
+            top:30;
+            right:30;
+            width:30px;
+            height:30px;
+            background:none;
+        }
+        .aboutContainer .aboutHeader h1{
+            font-family: 'Montserrat', sans-serif;
+            color:#101010;     
+            font-size: 34px;
+            font-weight: 600;
+            line-height: 30px;
+        }
+        .aboutContainer .aboutParagraph {margin-top:35px;}
+        .aboutContainer .aboutParagraph h1{
+            color:rgba(52, 52, 52, 1);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+        }
+
+        .aboutContainer .aboutParagraph h2{
+            color:rgb(0, 0, 0);margin-top:4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30px;margin-bottom:20px;
+
+        }
+
+        .aboutContainer .aboutParagraph p{
+            font-family: 'Inter', sans-serif;
+           
+    font-size: 16px;
+    max-width:90%;
+    text-align:justify;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color:rgb(77, 77, 77);
+    margin-top:15px;
+        }
+
+
+        .aboutContainer .imageCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   gap:20px;
+}
+
+.aboutContainer .card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    width: 200px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;display:flex;flex-direction:column;justify-content: center;align-items: center;
+}
+
+.aboutContainer .card:hover {
+    transform: scale(1.05);box-shadow:1px 1px 8px 1px rgb(105, 105, 105);
+}
+
+.aboutContainer .card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+}
+
+.aboutContainer .card .name {
+    font-family: 'Inter', sans-serif;;text-align:center;
+    font-size: 17px;max-width:90%;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;color:rgb(35, 35, 35);
+}
+
+.aboutContainer .card .about {
+    font-family: 'Inter', sans-serif;;text-align:center;
+    font-size: 14px;max-width:90%;
+    font-weight: 400;
+    line-height: 24px;margin-top:-10px;
+    letter-spacing: 0.02em;color:rgb(72, 72, 72);
+}
+
+.aboutContainer .card .linkedin {
+    margin: 15px 0;
+}
+
+.aboutContainer .card .linkedin img {
+    width: 30px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .aboutContainer .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+.aboutContainer .imageCards{margin-top:20px;}
+.aboutContainer .imageCards h1{
+    color:rgb(19, 19, 19);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 50px;text-align:center;;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="aboutContainer">
+
+         <!-- 1) header or nav bar -->
+     <div id="header"></div>
+
+      <div class="aboutContentBox">
+        <div class="aboutHeader">
+            <h1>ABOUT US</h1>
+            <!-- //<img src="Resources/back-arrow.png"  onclick="history.back()" alt="goBack"/>   -->
+          </div>
+   
+         <div class="aboutParagraph">
+             <h1>We help leaders build highly purposeful and successful organizations.</h1>
+             <h2>We have expertise in addressing both the visible and the hidden factors.</h2>
+             <p>In today’s fast-paced, ever-changing business environment, an organisation's ability to respond is its key to survival and success. However, it is not the ‘organisation’ that chooses when, why or how to respond; it is the people within it.</p>
+             <p>Most modern L&D and HR functions are seamlessly taking on OD interventions. In practice, the boundary is beginning to blur. Now, most L&D and HR Professionals, at some point of time, need to drive OD initiatives or partner with consulting firms to drive these initiatives. Very few options are available for them to build their expertise in the field of OD. And many a times, they find it difficult to enroll themselves for long-term mid-career professional courses.</p>
+             <p>Our OD course is custom designed to help Managers, HR Professionals and L&D Specialists effectively tackle the challenges associated with developing competent workforce that is confident, productive and committed to realizing the organisational goals.</p>
+             <p>Our highly practical in-depth programme will equip you with a core understanding of what OD is all about with the support of practical OD tools and techniques. The program aims at improving your skills and providing you with greater awareness of self and group processes.</p>
+             <p>We aim to achieve this by balancing theory and practice – using your real world situations as the start point for deep learning.</p>
+             <p>A combined perspective of a long-term practicing Consulting Firm and established Academicians would add great value to the Short Certification Course that will help large number of L&D and HR professionals gain an in-breadth understanding of Organization Development.</p>
+              
+         </div>
+         
+         <!-- <div class="imageCards">
+           <h1>Meet Our Team</h1>
+           <div class="imageCardsContainer"></div>
+         </div>
+           -->
+
+                  <!-- 9) testimonial section -->
+        <div class="testimonialBox" data-aos="slide-up">
+            <h1>What are leaders saying about ODA</h1>
+            <div class="box">
+               <img src="../Resources/leftarrow.png" id="left-arrow" class="arrow" alt="leftarrow"/>
+            
+               <div class="testimonialScroller">
+                 <div class="testimonialContainer" id="testimonialContainer"></div>
+               </div>
+        
+               <img src="../Resources/rightarrow.png" id="right-arrow" class="arrow" alt="rightarrow"/>  
+            </div>   
+        </div>
+
+  <!-- testimonialPopup -->
+  <div class="testimonialPopup">
+      <div class="testimonialPopupBackground">
+   
+         <div class="testimonialPopupContent">
+             <img src="../Resources/t1.png" class="imageofPerson" alt="profile"/>
+        
+             <div class="testimonialPopupMessageBox">
+                 <h1>What are leaders saying about ODA</h1>
+                 <p class="messageHeading"></p>
+                 <p class="message"></p>
+        
+               <div class="testimonialPopupMessageBy">
+                       <p class="name"></p>
+                       <p class="aboutPerson"></p>
+                </div>
+               <button onclick="closeTestimonialPopup()">
+                  <img src="../Resources/crossed.png" alt="close"/>
+              </button>
+        </div>
+       
+    </div>
+</div>
+</div>
+      </div>
+
+            <!-- 12) footer -->
+    <div id="footer"></div>
+    </div>
+
+     <!-- script file -->
+     <script src="../javascript/script.js"></script>
+     <script src="../javascript/header.js"></script>
+     <script src="../javascript/testimonialSection.js"></script>
+     
+    
+  <script>
+
+    
+// 0) add common header and footer
+// Function to load external HTML files
+function loadComponent(file, elementId) {
+  fetch(file)
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById(elementId).innerHTML = data;
+    })
+    .catch(error => console.error('Error loading component:', error));
+}
+
+// Load header and footer
+document.addEventListener('DOMContentLoaded', function() {
+  loadComponent('header.html', 'header');
+  loadComponent('footer.html', 'footer');
+});
+
+
+
+
+
+ let teamMembers = [
+    {
+        name: "Santhosh Babu",
+        imageSource: "team/1.jpg",
+        about: "Founder & Chairman",
+        linkedin: "https://www.linkedin.com/in/odalternatives/"
+    },
+    {
+        name: "Ashok Kumar",
+        imageSource: "team/2.png",
+        about: "CEO",
+        linkedin: "https://www.linkedin.com/in/ashok-kumar-907a6213/"
+    },
+    {
+        name: "Raja Perumal",
+        imageSource: "team/3.jpg",
+        about: "Partner",
+        linkedin: "https://www.linkedin.com/in/raja-perumal-29660026/"
+    },
+    {
+        name: "Mishti Verma",
+        imageSource: "team/4.png",
+        about: "Partner",
+        linkedin: "https://www.linkedin.com/in/mishti-verma-12298b5/"
+    },
+    {
+        name: "Aman Zaidi",
+        imageSource: "team/5.png",
+        about: "Partner",
+        linkedin: "https://www.odalternatives.com/about-us/#"
+    },
+    {
+        name: "Nabeela Moinuddin",
+        imageSource: "team/6.png",
+        about: "Partner",
+        linkedin: "https://www.linkedin.com/in/nabeelamoinuddin/"
+    },
+    {
+        name: "Amitesh Gir",
+        imageSource: "team/7.jpg",
+        about: "Partner",
+        linkedin: "https://www.linkedin.com/in/amitesh-gir-3a497844/"
+    },
+    {
+        name: "NS Parameswaran",
+        imageSource: "team/8.png",
+        about: "Partner",
+        linkedin: "https://in.linkedin.com/in/n-s-parameswaran-7ab96940"
+    },
+    {
+        name: "Linda Baptista",
+        imageSource: "team/9.png",
+        about: "Partner",
+        linkedin: "https://in.linkedin.com/in/linda-baptista-she-her-a24a0110"
+    },
+    {
+        name: "Shijin Sreeraman",
+        imageSource: "team/10.png",
+        about: "Associate Partner",
+        linkedin: "https://www.linkedin.com/in/shijinsreeraman-karuwath-ssk-1468bb24"
+    },
+    {
+        name: "Balasree Viswanathan",
+        imageSource: "team/11.png",
+        about: "Senior Consultant",
+        linkedin: "https://www.linkedin.com/in/balasree-v-27ba7577"
+    },
+    {
+        name: "Aditya Jain",
+        imageSource: "team/12.jpg",
+        about: "Senior Consultant",
+        linkedin: "https://www.linkedin.com/in/jainaditya72/"
+    },
+    {
+        name: "Amrita Das Dutta",
+        imageSource: "team/13.jpg",
+        about: "Consultant",
+        linkedin: "https://www.linkedin.com/in/amrita-das-dutta-894951b8/"
+    },
+    {
+        name: "Sunil Arya",
+        imageSource: "team/14.png",
+        about: "Head Finance",
+        linkedin: "https://www.linkedin.com/in/sunil-arya-7494983b/"
+    },
+    {
+        name: "PR Murali",
+        imageSource: "team/15.jpg",
+        about: "Head Admin",
+        linkedin: "https://www.linkedin.com/in/pr-murali-0141701b/"
+    }
+];
+
+const container = document.querySelector('.imageCardsContainer');
+
+teamMembers.forEach(member => {
+    const card = document.createElement('div');
+    card.classList.add('card');
+
+    card.innerHTML = `
+        <img src="${member.imageSource}" alt="${member.name}">
+        <p class="name">${member.name}</p>
+        <p class="about">${member.about}</p>
+        <a class="linkedin" href="${member.linkedin}" target="_blank">
+            <img src="Resources/ln.png" alt="LinkedIn">
+        </a>
+    `;
+
+    container.appendChild(card);
+});
+
+
+
+
+  </script>
+</body>
+</html>

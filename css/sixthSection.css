@@ -1,0 +1,46 @@
+
+/* 6) sixth section ////////////////////////////////////////////*/
+.sixthSection{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+    align-items:space-evenly;
+    padding:50px 62px;
+    background:rgba(249, 249, 249, 1);
+    background-image:url('../Resources/backgroundTexture.png');
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.sixthSection .contentBox{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+}
+.sixthSection img{max-width:280px;}
+.sixthSection h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align:center;
+    color:rgba(43, 43, 43, 1);; 
+}
+
+.sixthSection p{                            
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;max-width:600px;
+    font-weight: 400;color:rgba(43, 43, 43, 1);
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-align:center;margin-top:2px;
+}
+
+.sixthSection p span{
+    font-family: 'Inter', sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-align: center;}

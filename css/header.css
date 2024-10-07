@@ -1,0 +1,45 @@
+
+/* 1) nav bar ///////////////////////////////////////*/
+
+#header .headerContent{
+    max-width:1440px;
+    background:rgb(255, 255, 255);
+    position:fixed;top:0;
+    width:100%;;
+    display:flex;justify-content: space-between !important;align-items:center;
+    padding:0 62px;
+    transition: transform 0.s ease, opacity 0.3s ease;transform-origin: top; /* Pivot point for the flip */
+    z-index: 18;
+    text-align:center;
+ }
+
+ #header .headerContent a img{width:90px;padding:22px 0;cursor: pointer;;}
+ #header .headerLinks{list-style-type:none;display: flex;}
+
+ #header .headerLinks a{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 21px;
+    color:rgba(80, 80, 80, 1);
+    text-decoration: none;cursor:pointer;
+    padding:8px 20px;
+ }
+    
+ #header .headerLinks a:hover{
+   color:#080808;
+   background:rgba(245, 245, 245, 0.562);
+   border-radius:20px;
+   
+}
+#header .headerLinks .active{
+   color:#080808;
+   background:rgb(245, 245, 245);
+   border-radius:20px;
+   
+}
+
+ .hide-nav {opacity: 0;}
+
+ .show-nav {opacity: 1;}
+

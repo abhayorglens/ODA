@@ -1,0 +1,47 @@
+
+
+    /* 7)About founder Section /////////////////////////////////////*/
+    .founderSection{padding:60px 92px 80px;;;}
+    .founderSection h1{
+        font-family: 'Montserrat', sans-serif;
+        color:rgba(43, 43, 43, 1);
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 60px;
+    }
+    
+    .founderSection .contentBox{
+        display:flex;
+        gap:50px;
+        margin-top:0px;
+        align-items:start;
+        justify-content:space-between;
+    }
+    
+    .founderSection .contentBox .about{display:flex;flex-direction:column;gap:10px;}
+    
+    .founderSection .contentBox .about p{
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+        color:rgba(43, 43, 43, 1);
+    }
+    
+    .founderSection .contentBox .about p span{
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+        text-align: left;
+    }
+    
+    .founderSection .contentBox img{
+        max-width: 340px;
+        max-height: 370px;
+        border-radius: 8px;
+        margin-top:-50px;  
+    }
+    
