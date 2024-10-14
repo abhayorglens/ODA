@@ -1,0 +1,55 @@
+
+/* 1) nav bar ///////////////////////////////////////*/
+#header{width:100%; z-index: 180;background:rgb(255, 255, 255);}
+
+#header .headerContent{
+   
+    background:rgb(255, 255, 255);
+    position:fixed;top:0;
+    max-width:1440px;width:100%;
+    display:flex;
+    justify-content: space-between !important;
+    align-items:center;
+    padding:2px 62px;
+    transition: transform 0.1s ease, opacity 0.1s ease;
+    transform-origin: top; /* Pivot point for the flip */
+    z-index: 180;
+    text-align:center;
+    /* box-shadow:1px 1px 10px 1px rgba(190, 199, 207, 0.495); */
+ }
+
+ #header .headerContent a img{width:90px;padding:14px 0;cursor: pointer;;}
+ #header .headerLinks{list-style-type:none;display: flex;gap:5px;margin-right:-20px;}
+
+ #header .headerLinks a{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 21px;
+    color:rgba(80, 80, 80, 1);
+    text-decoration: none;cursor:pointer;
+    padding:6.5px 20px;
+ }
+    
+ #header .headerLinks a:hover{
+   color:#080808;
+   background:rgba(0, 0, 0, 0.057);
+   border-radius:20px;
+   
+}
+#header .headerLinks .active{
+   color:#0c0c0c;
+   background:rgba(0, 0, 0, 0.094);
+   border-radius:20px;
+   
+}
+
+ .hide-nav {opacity: 0;}
+
+ .show-nav {opacity: 1;}
+
+
+
+
+
+ 

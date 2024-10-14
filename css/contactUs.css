@@ -1,0 +1,138 @@
+ #contactUs{
+  min-height:100vh;
+    max-width:1440px;
+   margin:0 auto;
+ }
+    .contentBox{
+      margin: 110px auto -20px;padding:0px 62px; 
+        overflow:hidden;
+        position:relative;
+        display:flex;
+       
+        justify-content:center;
+            }
+           
+            
+    
+            h1{
+              font-family: 'Montserrat', sans-serif;
+              color:#202124;
+              text-align: center;
+              font-size: 25px;
+              font-weight: 600;
+              line-height: 30px;text-align:left;margin-bottom:30px;
+       
+            }
+            h2{
+              font-family: 'Montserrat', sans-serif;
+              color:rgba(43, 43, 43, 1);
+             
+              font-size: 16px;
+              font-weight: 600;
+              line-height: 30px;margin-bottom:6px;
+             }
+         
+          h3{
+              
+            font-family: 'Montserrat', sans-serif;
+  color:rgba(43, 43, 43, 1);
+ 
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 35px;margin-bottom:-5px;
+          }
+    
+          .contactUsContainer .contentBox{
+            min-height:100vh;
+            background:white;
+            display:flex;
+            justify-content: center;
+            gap:40px;
+            padding:0px 40px 80px;margin-top:120px;
+        }
+    
+          .contactUsContainer .contentBox img{
+            max-width:400px;
+            max-height:300px;
+            align-self:end;
+        }
+    
+          .contactUsContainer .content{
+            padding-right:80px;
+            display:flex;
+            flex-direction:column;
+        }
+    
+         .contactUsContainer form {margin-top:26px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+             }
+    
+           .contactUsContainer input, select, textarea {
+                width: 100%;
+                padding: 15px 18px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+              }
+    
+           .contactUsContainer  select {
+                width:100%;    
+                cursor: pointer;
+              }
+    
+           .contactUsContainer  label{
+               margin-top:12px;
+               font-family: 'Montserrat', sans-serif;
+               color:#212121;
+               font-size: 18px;
+               font-weight: 400;
+               line-height: 30px;
+            }
+    
+           .contactUsContainer  textarea {
+                height: 100px;
+                resize: vertical;
+            }
+    
+           .contactUsContainer  .buttons{
+                width:100%;
+                display:flex;
+                justify-content:end;
+                gap:15px;
+            }
+    
+            .contactUsContainer  button {
+                padding: 14px 40px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                width:200px;
+                font-size: 16px;
+                transition: background-color 0.3s ease;
+                font-family: 'Inter', sans-serif;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0.04em;
+                color:rgba(43, 43, 43, 1);
+            }
+    
+           .contactUsContainer  .back-button{
+                color:#457EFF;
+                background:white;
+                border:1px solid rgb(176, 176, 176);
+            }
+    
+           .contactUsContainer  .back-button:hover{border:1px solid rgb(40, 40, 40);}
+    
+           .contactUsContainer  .submit{color:white;background:#457EFF;}
+    
+           .contactUsContainer  .submit:hover{background:#2663f3;}
+    
+           .contactUsContainer  .submit:disabled {
+                background-color: #ccc;
+                cursor: not-allowed;
+            }
+    

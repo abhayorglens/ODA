@@ -1,0 +1,48 @@
+
+    /* 4) section */
+    .fourthSection{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding:52px 74px 65px;
+        margin:0px 0 0px;
+        text-align:center !important;
+        background-image:url('../Resources/backgroundTexture.png');
+        background-size:cover;
+        background-repeat:no-repeat;
+    }
+    
+    .fourthSection img{
+        max-width: 619px;
+        max-height:207;
+        margin:16px auto 15px;
+        text-align:center;  
+    }
+    
+    .fourthSection .firstLine{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 40px;color:rgba(52, 52, 52, 1);
+    }
+    .fourthSection .firstLine span{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 40px;color:rgba(52, 52, 52, 1);
+    }
+    
+    .fourthSection .secondLine{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 32px;color:rgba(52, 52, 52, 1);
+    }
+    
+    .fourthSection .secondLine span{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 32px;color:rgba(52, 52, 52, 1);
+    }
+    

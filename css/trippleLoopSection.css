@@ -1,0 +1,80 @@
+
+
+/* 5) Tripple loop sections /////////////////////////////////////////////*/
+.tripleLoopSection{padding:45px 62px 24px;}
+.tripleLoopSection h1{
+font-family: 'Montserrat', sans-serif;
+color:rgba(43, 43, 43, 1);
+text-align: center;
+font-size: 25px;
+font-weight: 600;
+line-height: 60px;
+}
+
+.tripleLoopSection .container{
+display:flex;
+gap:80px;
+margin-top:48px;
+justify-content:center;
+}
+
+.tripleLoopSection .container img{max-width: 466px;max-height: 470px; }
+
+.tripleLoopSection .container .rightBox{display:flex;flex-direction:column;gap:70px;}
+
+.tripleLoopSection .container .rightBox .loopDetails{
+display: grid;
+grid-template-columns:1fr 4fr;
+position:relative;
+gap:36px;
+border-left:0.3px solid #DADCE0;
+}
+        
+.tripleLoopSection .container .rightBox .loopDetails h1{
+color:#72757f;
+font-family: 'Montserrat', sans-serif;
+margin-left:30px;
+align-self:center;
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+}
+
+.tripleLoopSection .container .rightBox .loopDetails h1 span{
+color:#72757f;
+font-family: 'Montserrat', sans-serif;
+font-size: 40px;
+font-weight: 700;
+line-height: 28px;
+}
+
+.tripleLoopSection .container .rightBox .loopDetails ul{
+width:380px;
+display:flex;
+flex-direction:column;
+gap:4px;
+}
+
+.tripleLoopSection .container .rightBox .loopDetails ul li p{
+font-family: 'Inter', sans-serif;
+font-size: 15px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0.031em;
+color:#69696e;
+}
+
+.tripleLoopSection .container .rightBox .loopDetails:hover::after{
+content:"";
+position:absolute;
+width:7px;
+height:100%;
+background:rgb(164, 164, 164);
+border-top-right-radius: 10px;
+border-bottom-right-radius:10px;
+}
+
+.tripleLoopSection .container .rightBox .loopDetails:hover h1{color:#202124;}
+.tripleLoopSection .container .rightBox .loopDetails:hover h1 span{color:#202124;}
+.tripleLoopSection .container .rightBox .loopDetails:hover ul li p{color:#101011;}
+

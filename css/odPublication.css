@@ -1,0 +1,108 @@
+.odPublication{
+    min-height:100vh;
+max-width:1440px;
+margin:0 auto;
+    
+ }
+.odPublication  .contentBox {
+         margin: 90px auto -20px;padding:0px 62px; 
+        background-color: #fff;
+       
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        width:98%;
+        min-height: 100vh;
+       
+    }
+.odPublication    .contentBox img {
+        max-width: 235px;
+        max-height: 300px;
+        align-self: end;
+        margin-bottom:60px;
+    }
+.odPublication   .contentBox .content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        
+       
+    }
+.odPublication    h1 {
+    font-family: 'Montserrat', sans-serif;
+color:#202124;
+text-align: center;
+font-size: 25px;
+font-weight: 600;
+line-height: 30px;text-align:left;margin-bottom:22px;
+    }
+.odPublication   h2 {
+    font-family: 'Montserrat', sans-serif;
+color:#202124;
+text-align: center;
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;text-align:left;margin-bottom:8px;
+    }
+.odPublication   h3 {
+    font-family: 'Montserrat', sans-serif;
+color:rgba(43, 43, 43, 1);
+
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;margin-bottom:5px;
+    }
+.odPublication   .contentBox input {
+        width: 100%;
+        padding: 15px 18px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+.odPublication   .contentBox .buttons {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 14px;
+        margin-top:15px;
+        
+        
+    }
+.odPublication   .contentBox button {
+        height: 50px;
+        padding: 14px 30px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+.odPublication   .contentBox .backButton {
+        color: #457EFF;
+        background: white;
+        border: 1px solid rgb(176, 176, 176);
+    }
+.odPublication   .contentBox .backButton:hover {
+        border: 1px solid rgb(40, 40, 40);
+    }
+.odPublication   .contentBox .download {
+        color: white;
+        background: #457EFF;
+        padding: 14px 40px;
+    }
+.odPublication   .contentBox .download:active {
+        color: white;
+        background: #2353c4;
+        padding: 14px 40px;
+    }
+.odPublication   .contentBox .download:disabled {
+        background: grey;
+        cursor: not-allowed;
+    }
+.odPublication   .contentBox .download:hover:not(:disabled) {
+        background: #2663f3;
+    }
+
+  
